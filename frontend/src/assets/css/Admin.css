@@ -1,0 +1,38 @@
+.admin-page {
+	background: #000;
+	color: #fff;
+	min-height: 100vh;
+}
+
+.admin-page__container {
+	padding: 100px 30px 30px 30px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.admin-page__body {
+	padding: 15px 0 0 0;
+}
+
+.admin-page__title {
+	font-size: 36px;
+	margin-bottom: 15px;
+}
+
+.admin-page__link a {
+	display: inline-block;
+	font-size: 32px;
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+.admin-page__sublink a {
+	display: inline-block;
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.admin-page__button {
+	margin-right: 10px;
+}

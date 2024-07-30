@@ -1,0 +1,217 @@
+.custom-checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.custom-checkbox-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.custom-checkbox+label {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+}
+
+.custom-checkbox__label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	color: #000;
+}
+
+.custom-checkbox+label::before {
+	content: '';
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #D9D9D9;
+	margin: 5px;
+}
+
+.custom-checkbox:checked+label::before {
+	background-color: #3FC600;
+}
+
+.custom-checkbox.disabled+label::before {
+	background-color: #C60000;
+}
+
+.custom-checkbox.disabled-range+label::before {
+	background-color: #C1C1C1;
+}
+
+.registration-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.333);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: scale(0);
+	backdrop-filter: blur(10px);
+	padding: 15px;
+	z-index: 30;
+}
+
+.registration-modal__loading {
+	z-index: 99;
+}
+
+.registration-modal__error {
+	flex-direction: column;
+}
+
+.registration-modal__error p:nth-child(1) {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.registration-modal__error p:nth-child(2) {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.registration-modal.active {
+	transform: scale(1);
+}
+
+.registration-modal__content {
+	position: relative;
+	background-color: #fff;
+	z-index: 2;
+	padding: 30px;
+	min-width: 950px;
+	transform: scale(0);
+	transition: transform 0.5s ease-in-out;
+}
+
+.registration-modal__content:last-child {
+	margin: 0;
+}
+
+.registration-modal.active .registration-modal__content {
+	transform: scale(1);
+}
+
+.registration-dates__times {
+	display: flex;
+	position: relative;
+	left: 54px;
+}
+
+.registration-time {
+	display: flex;
+	align-items: center;
+	writing-mode: vertical-lr;
+	width: 25px;
+	margin-right: 10px;
+}
+
+.registration-close {
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 4;
+}
+
+.registration-close img {
+	width: 25px;
+	height: 25px;
+}
+
+.registration__title {
+	position: relative;
+	font-size: 28px;
+	margin-bottom: 5px;
+	left: -5px;
+}
+
+.registration__subtitle {
+	font-size: 18px;
+	margin-bottom: 10px;
+	max-width: 800px;
+}
+
+.registration-selects {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.registration-selects__select {
+	margin-right: 20px;
+}
+
+.registration-dates {
+	margin-bottom: 10px;
+}
+
+.registration-date__row {
+	display: flex;
+	align-items: center;
+}
+
+.registration-date__date {
+	margin-right: 10px;
+}
+
+.registration__amount {
+	font-size: 32px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.registration__loyalty {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.registration__button {
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.registration__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.registration__label {
+	margin-bottom: 10px;
+}
+
+.registration__input {
+	height: 50px;
+	width: 100%;
+	border: 2px solid #A6002C;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 10px;
+	font-size: 22px;
+}
+
+.registration__button button {}
+
+/* .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+	top: 0 !important;
+	border-color: #A6002C !important;
+	border-width: 2px !important;
+	border-radius: 5px !important;
+}
+
+.css-14lo706 {
+	display: none !important;
+} */

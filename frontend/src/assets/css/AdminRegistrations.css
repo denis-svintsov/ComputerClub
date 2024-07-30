@@ -1,0 +1,35 @@
+.admin-page__table {}
+
+.admin-page__table th {
+	padding: 10px;
+}
+
+.admin-page__table td {
+	padding: 10px;
+	border: 1px solid #fff;
+	border-top: 0;
+	border-left: 0;
+}
+
+.admin-page__table td:last-child {
+	border-right: 0;
+}
+
+.admin-page__table tr:last-child td {
+	border-bottom: 0;
+}
+
+.table__button {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+	background-color: #000;
+	color: #fff;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.table__button:last-child {
+	margin-right: 0;
+	margin-bottom: 0;
+}

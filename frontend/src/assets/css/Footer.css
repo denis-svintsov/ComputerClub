@@ -1,0 +1,27 @@
+.footer {
+	background-color: #000;
+	color: #fff;
+}
+
+.footer__container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 30px 10px;
+}
+
+.footer__link {
+	color: #fff;
+	font-size: 32px;
+}
+
+.footer__body {
+	font-size: 18px;
+}
+
+.footer__tel {
+	margin-bottom: 10px;
+}
+
+.footer__address {}

@@ -1,0 +1,144 @@
+.block {
+	background-color: #fff;
+	height: 2000px;
+}
+
+.main-header {
+	position: relative;
+}
+
+.main-header {
+	height: 100vh;
+}
+
+.main-header__body {
+	height: 100%;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 30px 30px 30px;
+}
+
+.main-header__title {
+	font-size: 64px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.main-header__description {
+	font-size: 36px;
+	max-width: 500px;
+	text-align: center;
+}
+
+.main-header__button {
+	margin-top: 200px;
+}
+
+.main-header__background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.main-header__background::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.main-header__background img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.price-block {
+	background-color: #000;
+
+	color: #fff;
+}
+
+.price-block__container {}
+
+.block-title {
+	font-size: 48px;
+}
+
+.price-block__title {
+	font-size: 48px;
+	margin-bottom: 60px;
+}
+
+.price-block__table {
+	font-size: 24px;
+}
+
+.price-block__table th {
+	padding: 0px 20px 10px;
+}
+
+.price-block__table td {
+	padding: 0px 20px 10px;
+}
+
+.table-center {
+	text-align: center;
+}
+
+.computers-block {
+	background-color: #510016;
+	color: #fff;
+}
+
+.block__container {
+	padding: 60px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.computers-block__container {}
+
+.computers-block__title {
+	margin-bottom: 60px;
+}
+
+.computers-block__body {
+	display: grid;
+	gap: 40px;
+	column-gap: 90px;
+	grid-template-columns: auto auto;
+}
+
+.item-computers {
+	display: flex;
+}
+
+.item-computers__image {
+	margin-right: 30px;
+}
+
+.item-computers__title {
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+.item-computers__text {
+	font-size: 18px;
+	max-width: 268px;
+	margin-bottom: 5px;
+}
